@@ -1,2 +1,2 @@
 # uhk-KTPW1-Cinema-projekt
-Veřejněprospěšná kulturní organizace - kinoo
+Veřejně prospěšná kulturní organizace - kino
