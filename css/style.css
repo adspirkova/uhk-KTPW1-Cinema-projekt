@@ -1,0 +1,526 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    color: #EDF2F4; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #2B2D42; */
+    /* background-color: #8D99AE; */
+    background-color: #EDF2F4;
+    margin: 0 auto;
+    /* background-color: #AA0721; */
+    /* background-color: #D90429; */
+}
+
+/****************************************************************************************************/
+/* Header */
+/****************************************************************************************************/
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding: 10px 8px 0px 8px;
+}
+
+header {
+    margin-top: 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    background-color: #AA0721;
+    padding: 10px 18px 8px 18px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin: 0
+}
+
+/****************************************************************************************************/
+/* Navbar */
+/****************************************************************************************************/
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #AA0721;
+    padding: 10px 18px 8px 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+  nav > ul {
+    padding-left: 130px;
+}
+}
+
+/****************************************************************************************************/
+/* Footer */
+/****************************************************************************************************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #AA0721;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        flex-direction: row;
+    }
+}
+
+footer > div > ul {
+    list-style-type: none;
+    display: flex;
+    padding: 10px 18px 8px 18px;
+}
+
+footer > div > ul > li {
+    border-right: 1px solid #EDF2F4;
+    padding: 0 10px; 
+}
+
+footer > div > ul > li:last-child {
+    border: none; 
+}
+
+.copyright {
+    padding: 0 10px; 
+}
+
+/****************************************************************************************************/
+/* Main */
+/****************************************************************************************************/
+main {
+    background-color: #2B2D42;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+/****************************************************************************************************/
+/* Slider */
+/****************************************************************************************************/
+
+.mySlides {
+  margin-top: 30px;
+}
+
+.mySlides > img {
+    width: 100%;
+    height: 30vh;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #EDF2F4;;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  margin: 0 6px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #2B2D42;
+}
+
+/* Caption text */
+.text {
+  color: #EDF2F4;
+  font-size: 11px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text > p, span {
+    flex: 1
+}
+
+.author , .author > a {
+    font-size: 6px;
+    text-decoration: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media screen and (min-width: 600px) {
+  .prev, .next,.text {
+    font-size: 15px
+  }
+  .mySlides > img {
+    height: 60vh;
+  }
+}
+
+/****************************************************************************************************/
+/* Table */
+/****************************************************************************************************/
+
+.banner {
+  background-color: #EDF2F4;
+  color: #2B2D42;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.scroll {
+  overflow: scroll;
+}
+
+table {
+    border: 1px solid white;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+td {
+  border: 1px solid white;
+  padding: 2px; 
+}
+
+
+/****************************************************************************************************/
+/* About Page */
+/****************************************************************************************************/
+
+.bold {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#map {
+  width: 300px;
+  height: 200px;
+}
+
+@media screen and (min-width: 600px) {
+  #map {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+@media screen and (min-width: 600px) {
+  #contact {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+}
+
+#contact > div {
+  padding: 30px;
+}
+
+#form {
+  margin: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea, select, button {
+  color: #2B2D42
+}
+
+.form-group {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 10px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .form-group {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 10px;
+    font-size: 20px;
+  }
+}
+
+#submit-form {
+  margin: 2px 10px;
+  float: right;
+}
+
+/****************************************************************************************************/
+/* Thank you Page */
+/****************************************************************************************************/
+
+.back {
+  margin: 14px 0;
+  padding: 1px 3px;
+  font-size: 18px;
+  background-color: #AA0721;
+  color: #EDF2F4;
+  border: 1px solid #EDF2F4;
+  border-radius: 5px;
+}
+
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/****************************************************************************************************/
+/* Sponsors Page */
+/****************************************************************************************************/
+
+.sponsorsLogo {
+  max-width: 200px;
+  min-height: 200px;
+  object-fit: contain;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row > div {
+  padding: 20px 0;
+}
+
+@media screen and (min-width: 600px) {
+  .flex-row {
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 30px 30px;
+  }
+}
+
+.h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 40px 0;
+}
+
+h3 {
+  text-align: center;
+}
+
+/****************************************************************************************************/
+/* Movies Page */
+/****************************************************************************************************/
+
+.moviePoster {
+  width: 120px;
+  height: 165px;
+}
+
+@media screen and (min-width: 600px) {
+  .moviePoster {
+    width: 180px;
+    height: 250px;
+  }
+}
+
+.movieRow{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.movieRow > div {
+  padding: 20px 0;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .movieRow {
+    align-items: flex-start;
+    padding: 30px 30px;
+  }
+  .movieRow > div {
+    width: 200px;
+  }
+}
+
+h4 {
+  font-size: 14px;
+  text-align: center;
+}
+
+/****************************************************************************************************/
+/* Blog Page */
+/****************************************************************************************************/
+
+.blog {
+  padding: 20px 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .blog {
+    padding: 80px 70px;
+  }
+}
+
+.movieImg {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 600px) {
+  .movieImg {
+    flex: 1;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.movie {
+  padding: 20px 0;
+}
+
+
+@media screen and (min-width: 600px) {
+  .movie {
+    display: flex;
+    border-bottom: 1px solid #EDF2F4;
+    margin: 20px 0px;
+  }
+  .movie:last-child {
+    border: none;
+  } 
+  }
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.MovieDesc {
+  overflow-wrap: break-word;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .MovieDesc {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.floatedLeft {
+  float: left;
+}
+
+@media screen and (min-width: 600px) {
+  .floatedLeft {
+    float: none;
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.floatedRight {
+  float: right;
+}
+
+@media screen and (min-width: 600px) {
+  .floatedRight {
+    float: none;
+    flex: 1;
+    text-align: center;
+  }
+}

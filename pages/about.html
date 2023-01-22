@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kino Pomoci</title>
+    <link rel="icon" type="svg" href="../assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200;1,300;1,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <div id="contact">
+            <div>
+                <h2>Kontakt</h2>
+                <p><span class="bold">Adresa:</span> Jeruzalémská 1321/2, 110 00, Praha 1</p>
+                <p><span class="bold">Telefonní číslo</span> <a href="tel:+420999999999">+420 999 999 999</a> </p>
+                <div>
+                    <p class="bold">Otevírací doba:</p>
+                    <p><span class="bold">Po-Pá:</span> 15 - 23 hod</p>
+                    <p><span class="bold">So-Ne:</span> 16 - 23 hod</p>
+                </div>
+            </div>
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5120.408225412549!2d14.428290442185057!3d50.08246522668721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95f7730ba369%3A0x4c2284df47814b15!2sEdison%20Filmhub!5e0!3m2!1sen!2scz!4v1673038616756!5m2!1sen!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="form">
+            <h2>Napište nám</h2>
+            <form method="get" action="/pages/thankYou.html">
+                <div class="form-group">
+                    <label for="category">Kategorie</label>
+                    <select name="category" id="category">
+                        <option value="reservation">Rezervace</option>
+                        <option value="food">Občerstvení</option>
+                        <option value="cinema">Kino</option>
+                        <option value="staff">Personál</option>
+                    </select>
+                   </div>
+                <div class="form-group">
+                    <label for="email">Váš email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+               <div class="form-group">
+                <label for="phone">Telefonní číslo (nepovinné):</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">   
+               </div>
+               <div class="form-group">
+                <label for="subject">Předmět</label>
+                <input type="text" name="subject" id="subject" required>
+               </div>
+               <div class="form-group">
+                <label for="text"></label>
+                <textarea id="text" name="text" rows="5" cols="42"></textarea>
+               </div>
+               <div>
+                <input class="submit" type="submit" value="Odeslat" id="submit-form"/>
+               </div>
+            </form>
+        </div>
+
+    </main>
+
+    
+    <footer></footer>
+
+   <script src="./index.js"></script>
+</body>
+</html>

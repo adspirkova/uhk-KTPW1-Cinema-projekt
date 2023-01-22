@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kino Pomoci</title>
+    <link rel="icon" type="svg" href="./assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200;1,300;1,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade" style="display: block;">
+              <img src="./assets/photo-manipulation-1825450_1280.jpg">
+              
+              <div class="text">
+                <span></span>
+                <p>Vesmírní andělé</p>
+                <p class="author">Image by <a href="https://pixabay.com/users/pezibear-526143/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=562297">Petra</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=562297">Pixabay</a></p>
+              </div>
+            </div>
+            
+            <div class="mySlides fade" style="display: none;">
+              <img src="./assets/child-562297_1280.jpg">
+              <div class="text">
+                <span></span>
+                <p>Jozefínky výprava</p>
+                <p class="author">Image by <a href="https://pixabay.com/users/pezibear-526143/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=562297">Petra</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=562297">Pixabay</a></p>
+              </div>
+            </div>
+            
+            <div class="mySlides fade" style="display: none;">
+              <img src="./assets/man-4134645_1280.jpg">
+              <div class="text">
+                <span></span>
+                <p>Agent s povolením zabíjet</p>
+                <p class="author">Image by <a href="https://pixabay.com/users/10634669-10634669/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4134645">Sam Williams</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4134645">Pixabay</a></p>
+            </div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>   
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <h2 class="banner">Program kina pro dnešní den</h2>
+
+      <div class="scroll">
+       
+        <table>
+          <tbody>
+              <tr>
+                  <td></td>
+                  <td>16:00</td>
+                  <td>17:00</td>
+                  <td>18:00</td>
+                  <td>19:00</td>
+                  <td>20:00</td>
+                  <td>21:00</td>
+                  <td>22:00</td>
+                  <td>23:00</td>
+              </tr>
+              <tr>
+                <td><a href="./pages/blog.html#cyborg">Vesmírní andělé</a></td>
+                <td></td>
+                <td>17:15</td>
+                <td></td>
+                <td>19:20</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="./pages/blog.html#jozefinka">Jozefínky výprava</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>20:45</td>
+                <td></td>
+                <td>22:00</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="./pages/blog.html#czechs">Good Old Czechs</a></td>
+                <td>16:35</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>21:05</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Mikulášovy patálie: Jak to celé začalo</td>
+                <td></td>
+                <td>17:55</td>
+                <td></td>
+                <td></td>
+                <td>20:10</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="./pages/blog.html#eight">Osm hor</a></td>
+                <td></td>
+                <td></td>
+                <td>18:15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>22:20</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td><a href="./pages/blog.html#agent">Agent s povolením zabíjet</a></td>
+                <td>16:50</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>21:25</td>
+                <td></td>
+                <td></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+ 
+ 
+    <footer></footer>
+
+   <script src="../pages/index.js"></script>
+   <script src="slider.js"></script>
+</body>
+</html>
